@@ -2,14 +2,25 @@
   <div class="container">
     <div>
       <h1 class="title">
-        vetdev
+        vet.dev
       </h1>
+      <h2>
+        {{ page.title }}
+      </h2>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  async asyncData ({ $content }) {
+    const page = await $content('hello').fetch()
+
+    return {
+      page
+    }
+  }
+}
 </script>
 
 <style>
