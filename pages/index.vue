@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <h1 class="title">
+      <h1 class="title hello">
         vet.dev
       </h1>
       <h2>
